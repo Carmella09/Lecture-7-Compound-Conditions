@@ -1,4 +1,4 @@
-# L7-Codes
+# LEC-7-Codes
 
 Theme Park
 
