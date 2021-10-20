@@ -53,83 +53,132 @@ Extension Problem (Optional)
 
 Mark my Words Grades
 
-      #include <iostream>
+           using namespace std;
+      int main()
+      {
+          cout << "Write your Grade: " << endl;
+          double grade;
+          cin >> grade;
 
-    using namespace std;
-    int main()
-    {
-        int grade;
-        cout << "Write your Grade: \n" << endl;
-            cin >> grade; 
+          if (grade > 70) {
+              cout << "Your grade is A " << endl;
+          }
+          else if (grade >= 60 && grade < 70) {
+              cout << "Your grade is B " << endl;
+          }
+          else if (grade >= 50 && grade < 60) {
+              cout << "Your grade is C " << endl;
+          }
+          else if (grade >= 40 && grade < 50) {
+              cout << "Your grade is D " << endl;
+          }
+          else if (grade <= 40) {
+              cout << "Your grade is F " << endl;
+          }
+          else {
+              cout << "Invalid Output" << endl;
+          }
 
-        if (!(grade < 70)) {
-            cout << "Your grade is A " << endl; 
-        }
-         else if (!(grade < 60)) {
-            cout << "Your grade is B " << endl;
-        }
-         else if (!(grade < 50)) {
-            cout << "Your grade is C " << endl;
-        }
-        else if (!(grade < 40)) {
-            cout << "Your grade is D " << endl;
-        }
-        else {
-            cout << "Your grade is F" << endl;
-        }
-        cin.get();
-        return 0;
-    }
-
-
-  Starting a Band (wrong) (need interaction)
-
-      #include <iostream>
-    #include <string>
-    using namespace std;
-    int main()
-    {
-      bool musicalFriend = true;
-      string friendPlays = "guitar";
-      string friendAlso = "drum";
-
-      if (friendPlays == "guitar" || friendPlays == "Guitar") {
-        cout << "Strings match" << endl;
       }
-        else if (friendPlays == "drum" || friendPlays == "Drum"){
-            cout << "Strings match" << endl;
-      }
-      else {
-        cout << "String do not match" << endl;
-      }
-    }
+
+
+
+Starting a Band
+
+            #include<iostream>
+            #include<string>
+            using namespace std;
+            int main()
+            {
+                  bool musician;
+                  string answer;
+                  string instrument;
+
+                  cout << "Do you play any instrument? " << endl;;
+                  cout << "Y for yes " << endl;
+                  cout << "N for no " << endl;
+                  cin >> answer;
+
+                  if (answer == "y" || answer == "Y")
+                  {
+                        musician = true;
+                        if (musician == true)
+                        {
+                              cout << "What kind of insturment you can play?" << endl;
+                              cout << "D for drummer " << endl;
+                              cout << "G for guitar " << endl;
+                              cout << "O for others " << endl;
+                              cin >> instrument;
+
+                              if (instrument == "d" || instrument == "D")
+                              {
+                                    cout << "You're in the group drummer!" << endl;
+                              }
+                              else if (instrument == "g" || instrument == "G")
+                              {
+                                    cout << "You're in the group guitarist!" << endl;
+                              }
+                              else if (instrument == "o" || instrument == "O")
+                              {
+                                    cout << "I'm actually looking for a guitarist or drummer at the moment." << endl;
+                                    cout << "Please contact me if you know someone." << endl;
+                                    cout << "Thanks!" << endl;
+                              }
+                              else
+                              {
+                                    cout << "What? Please try again." << endl;
+                              }
+                        }
+                  }
+                  else if (answer == "N" || answer == "n")
+                  {
+                        musician = false;
+                        cout << "I'm looking for a person who can used instruments specifically a guitar or drum." << endl;
+                        cout << "Please contact me if you know someone." << endl;
+                        cout << "Thanks!" << endl;
+                  }
+                  else
+                  {
+                        cout << "What? Please try again." << endl;
+                  }
+
+                  return 0;
+            }
 
     
     
- Time Killing (wrong) (need interaction) 
+Time Killing
   
-        #include <iostream>
-      #include <string>
+        #include<iostream>
       using namespace std;
       int main()
       {
-          bool lessMinute = true;
-          bool anotherMinute = false;
-          bool haveMoney = false; 
+            cout << "I'm in Dubai Mall waiting for a friend." << endl;
+            cout << "My friend is late." << endl;
 
-          if (anotherMinute) {
-            if (haveMoney)
-              {
-              cout << "Go buy coffee" << endl;
-              }
-              else
-              {
-              cout << "Go for a walk around the town." << endl;
-              }
-          }
-           else {
-           cout << "Sit in the food zone and wait." << endl;
-         }
+            int time; 
+            int minutes;
+            int money;
+            cout << "How many more minutes do I have to wait for my friend? " << endl;
+            cin >> time;
+            if (time >= 15)
+            {
+                  cout << "Do you have money? How much?" << endl;
+                  cin >> money;
+                  if (money > 5)
+                  {
+                        cout << "You have money. Let's go buy a drink and wait for him" << endl;
+                  }
+                  else
+                  {
+                        cout << "Let's just walk around the mall" << endl;
+                  }
+            }
+            else
+            {
+                  cout << "Just wait for them." << endl;
+            }
+            return 0;
       }
       
       
