@@ -47,9 +47,9 @@ Theme Park
     }
 
 
-Letter Checker Vowels Consonant  
+Letter Checker Vowels Consonant (IN PROGRESS)
 
-Extension Problem (Optional)
+Extension Problem (Optional) (IN PROGRESS)
 
 Mark my Words Grades
 
