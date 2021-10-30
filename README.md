@@ -2,20 +2,18 @@
 
 Theme Park
 
-      #include <iostream>
+    #include <iostream>
     using namespace std;
     int main()
     {
 
-        cout << "Enter your height: \n";
+        cout << "Enter your height in meters: \n";
         double height ;
         cin >> height;
 
         cout << "Enter your age: \n";
         int age;
         cin >> age;
-
-
 
         if (( height > 0.5) && (age > 4))
         {
@@ -24,17 +22,18 @@ Theme Park
         else {
             cout << "Sorry, you can't" << endl;
         }
+        
         return 0;
     }
 
 
  France (Primitive Quiz)
 
-      #include <iostream>
+    #include <iostream>
     using namespace std;
     int main()
     {
-       string paris;
+        string paris;
         cout << "What is the Capital of France? " << endl;
         cin >> paris; 
 
@@ -53,8 +52,8 @@ Extension Problem (Optional) (IN PROGRESS)
 
 Mark my Words Grades
 
-          #include <iostream>
-           using namespace std;
+      #include <iostream>
+      using namespace std;
       int main()
       {
           cout << "Write your Grade: " << endl;
@@ -150,7 +149,7 @@ Starting a Band
     
 Time Killing
   
-        #include<iostream>
+      #include<iostream>
       using namespace std;
       int main()
       {
