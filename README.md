@@ -46,9 +46,55 @@ Theme Park
     }
 
 
-Letter Checker Vowels Consonant (IN PROGRESS)
+Letter Checker Vowels Consonant
 
-Extension Problem (Optional) (IN PROGRESS)
+    #include <iostream>
+    using namespace std;
+
+    int main()
+    {
+        char l;
+        cout << "Please enter a letter to psecify if it's a consonant or vowel: ";
+        cin >> l;
+
+        if (l == 'a' || l == 'e' || l == 'i' || l == 'o' || l == 'u' || l == 'A' || l == 'E' || l == 'I' || l == 'O' || l == 'U')
+        {
+            cout << "\nIt's a vowel" << endl;
+        }
+
+        else
+        {
+            cout << "\nIt's a consonant" << endl;
+        }
+    }
+
+
+
+Extension Problem (Optional)
+
+    #include <iostream>
+    using namespace std;
+
+    int main()
+    {
+        char l;
+        cout << "Please enter a letter to psecify if it's a consonant or vowel: ";
+        cin >> l;
+        if (!isalpha(l))
+        {
+            cout << "\nInvalid Input" << endl;
+        }
+        else if (l == 'a' || l == 'e' || l == 'i' || l == 'o' || l == 'u' || l == 'A' || l == 'E' || l == 'I' || l == 'O' || l == 'U')
+        {
+            cout << "\nIt's a vowel" << endl;
+        }
+
+        else
+        {
+            cout << "\nIt's a consonant" << endl;
+        }
+    }
+
 
 Mark my Words Grades
 
