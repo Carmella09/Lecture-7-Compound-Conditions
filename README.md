@@ -1,4 +1,4 @@
-# LEC-7-Codes
+# LEC-7-EXERCISES
 
 Theme Park
 
@@ -26,6 +26,7 @@ Theme Park
         return 0;
     }
 
+//EXERCISES
 
  France (Primitive Quiz)
 
